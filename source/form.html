@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Конкурс</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -20,14 +20,14 @@
       </button>
       <nav class="nav">
         <ul class="nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a>Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/study">Html Academy</a>
@@ -35,131 +35,73 @@
         </ul>
       </nav>
     </div>
-    <h1 class="header__title">Взгляните на&nbsp;жизнь иначе!</h1>
+    <h1 class="header__title">Конкурс на&nbsp;самое безбашенное путешесвие с&nbsp;Пинк</h1>
   </header>
-  <main class="main">
-    <section class="download">
-      <h2 class="visually-hiden">Скачать приложение</h2>
-      <a class="download__button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-      <ul class="download-list">
-        <li class="download-list__item">
-          <a class="download-list__item-link" href="https://www.apple.com/ru/app-store/">
-            <img src="img/apple-logo.svg" width="47" height="56" alt="Иконка Apple" />
-          </a>
-        </li>
-        <li class="download-list__item">
-          <a class="download-list__item-link" href="https://play.google.com/store">
-            <img src="img/android-logo.svg" width="43" height="47" alt="Иконка Android" />
-          </a>
-        </li>
-        <li class="download-list__item">
-          <a class="download-list__item-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-            <img src="img/microsoft-logo.svg" width="44" height="41" alt="Иконка Windows" />
-          </a>
-        </li>
-      </ul>
-      <p class="download__text">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X,
-        Windows&nbsp;8
-      </p>
-    </section>
-    <section class="advantages">
-      <header class="advantages__header">
-        <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="advantages__text">Устали от&nbsp;серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
-      </header>
-      <ul class="advantages__list">
-        <li class="advantages__list-item">
-          <h3 class="advantages__list-title">Поднимает настроение</h3>
-          <p class="advantages__list-text">
-            Приложение позволит вам победить осеннюю хандру и&nbsp;депрессиию
-            буквально в&nbsp;несколько кликов!
-          </p>
-        </li>
-        <li class="advantages__list-item">
-          <h3 class="advantages__list-title">Меняет мир вокруг</h3>
-          <p class="advantages__list-text">
-            Сделайте снимок и&nbsp;украсьте его смайликом или текстовой
-            подписью, чтобы усилить эффект
-          </p>
-        </li>
-        <li class="advantages__list-item">
-          <h3 class="advantages__list-title">Заводит новых друзей</h3>
-          <p class="advantages__list-text">
-            Ставьте лайки, комментируйте, делитесь фотографиями
-            с&nbsp;друзьями и&nbsp;заводите новых
-          </p>
-        </li>
-      </ul>
-      <div class="advantages__list-box">
-        <img src="img/iphone.png" width="157" height="320" alt="Изображение телефона" />
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">
-              &laquo;Это приложение перевернуло мой мир и&nbsp;позволило
-              по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще
-              я&nbsp;познакомился со&nbsp;своей будущей женой
-              в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
-            </p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-    <section class="prices">
-      <div class="prices__wrapper slider">
-        <h2 class="visually-hidden">Прайс-лист</h2>
-        <table class="prices__list">
-          <tr>
-            <th class="prices__list-item">
-              <span class="prices__list-sticker">Хит</span> Стандарт<br />
-              3,99 USD
-            </th>
-          </tr>
-          <tr>
-            <td class="prices__list-type">Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td class="prices__list-type">Смайлики</td>
-          </tr>
-          <tr>
-            <td class="prices__list-type">Комментарии</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Наши контакты и адрес</h2>
-        <p class="contacts__text">
-          Остались вопросы? <br />Свяжитесь с&nbsp;нами!
+  <main class="main main-form">
+    <section class="form-section form">
+      <h2 class="visually-hidden">Конкурс на путешесвие</h2>
+      <p class="form-section__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="form-option" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-option__group">
+          <legend class="form-option__title visually-hidden">Заполните ваши данные</legend>
+          <label class="form-option__info" for="last-name">Фамилия</label>
+          <input class="form-option__window" type="text" name="last-name" placeholder="Укажите фамилию *" id="last-name" required>
+          <label class="form-option__info" for="first-name">Имя</label>
+          <input class="form-option__window" type="text" name="first-name" placeholder="Введите ваше имя *" id="first-name" required>
+          <label class="form-option__info" for="middle-name">Отчество</label>
+          <input class="form-option__window" type="text" name="middle-name" placeholder="Ну и отчество тоже" id="middle-name">
+        </fieldset>
+        <fieldset class="form-option__group">
+          <legend class="form-option__title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+          <input class="form-option__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+          <label class="form-option__info" for="selfie">Сделал селфи с&nbsp;акулой</label>
+          <input class="form-option__checkbox" type="checkbox" name="sunburned" id="sunburn" checked>
+          <label class="form-option__info" for="sunburn">Обгорел на&nbsp;пляже</label>
+          <input class="form-option__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+          <label class="form-option__info" for="chuck-norris">Видел Чака Норриса</label>
+          <input class="form-option__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+          <label class="form-option__info" for="souvenirs">Накупил сувениров</label>
+          <input class="form-option__checkbox" type="checkbox" name="castle" id="castle" checked>
+          <label class="form-option__info" for="castle">Удержал башню</label>
+          <input class="form-option__checkbox" type="checkbox" name="hotel" id="hotel">
+          <label class="form-option__info" for="hotel">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="form-option__group">
+          <legend class="form-option__title">Контактная информация</legend>
+          <label class="form-option__info" for="tel">Номер телефона</label>
+          <input class="form-option__window" type="text" name="telephone" placeholder="Номер, пожалуйста" id="tel">
+          <label class="form-option__info" for="email">Адрес почты</label>
+          <input class="form-option__window" type="text" name="email" placeholder="Введите почту *" id="email" required>
+        </fieldset>
+        <fieldset class="form-option__group">
+          <legend class="form-option__title">С&nbsp;каким приложением путешествовали?</legend>
+          <input class="form-option__radio" type="radio" name="ios" id="ios" checked>
+          <label class="form-option__title" for="ios">Pink для iOS</label>
+          <input class="form-option__radio" type="radio" name="android" id="android">
+          <label class="form-option__title" for="android">Pink на Android</label>
+          <input class="form-option__radio" type="radio" name="windows" id="windows">
+          <label class="form-option__title" for="windows">Windows Phone</label>
+        </fieldset>
+        <fieldset class="form-option">
+          <legend class="form-option__title">Опишите свои эмоции</legend>
+          <textarea class="form-option__text" rows="5" cols="20" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button class="form-option__button button" type="submit">Отправить форму</button>
+        <p class="filter-option__text">
+          <sup>*</sup>
+          - Обязательные поля
         </p>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <h4 class="contacts-list__title">Звоните:</h4>
-            <a class="contacts-list__link" href="+78125556666" about="_blank" aria-label="Наш телефон">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts-list__item">
-            <h4 class="contacts-list__title">Пишите:</h4>
-            <a class="contacts-list__link" href="#" about="_blank" aria-label="Наша почта">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts-list__item">
-            <h4 class="contacts-list__title">Приезжайте в гости:</h4>
-            <a class="contacts-list__link" href="#" about="_blank" aria-label="Наш адрес">ул. Большая Конюшенная, 19/8</a>
-          </li>
-        </ul>
-        <p class="map">
-          <a class="map__link" href="#">
-            <img src="img/map.png" width="320" height="200" alt="Карта офиса" />
-          </a>
-        </p>
-      </div>
+      </form>
+    </section>
+    <section class="modal-check modal">
+      <h2 class="modal-check__title">Что-то пошло не&nbsp;так!</h2>
+      <p class="modal-check__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+      <button class="modal-check__button button">Ok</button>
+    </section>
+    <section class="modal-success modal">
+      <h2 class="modal-success__title">Ваша заявка отправлена!</h2>
+      <p class="modal-success__text">Спасибо ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;рассмотрим ее&nbsp;оповестим вас.</p>
+      <button class="modal-success__button button">Ok</button>
     </section>
   </main>
   <footer class="footer">

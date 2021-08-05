@@ -1,0 +1,6 @@
+@import "global/variables";
+@import "global/mixins";
+
+.photo-list {
+  @include list-reset;
+}

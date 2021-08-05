@@ -1,0 +1,45 @@
+@import "global/variables";
+@import "global/mixins";
+
+.advantages {
+  background-color: $grey-back;
+}
+
+.advantages__header {
+  background-color: $white;
+}
+
+.advantages__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+  color: $dark-blue;
+  padding: 46px 20px 70px 20px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__list-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__list-box {
+  background-image:
+  url("img/phone.jpg"),
+  url("img/iphone\ screen-3.png");
+  background-size: auto, cover;
+  background-position: auto;
+}

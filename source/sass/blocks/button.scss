@@ -1,0 +1,11 @@
+@import "global/variables";
+@import "global/mixins";
+
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+}

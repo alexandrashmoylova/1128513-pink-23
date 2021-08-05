@@ -1,0 +1,11 @@
+@import "global/variables";
+@import "global/mixins";
+
+
+.footer {
+  background-color: $white;
+}
+
+.footer__link {
+  cursor: pointer;
+}

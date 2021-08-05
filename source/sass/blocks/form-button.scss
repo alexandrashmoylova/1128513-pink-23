@@ -1,0 +1,12 @@
+@import "global/variables";
+@import "global/mixins";
+
+.form-button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+  background-color: $green;
+}

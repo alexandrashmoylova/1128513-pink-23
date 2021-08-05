@@ -1,0 +1,49 @@
+@import "global/variables";
+@import "global/mixins";
+
+.photo-item {
+  background-color: $grey-back;
+  margin-bottom: 20px;
+}
+
+.photo-item__sticker {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  width: 140px;
+  height: 36px;
+  background-color: $lipstick;
+  color: $white;
+}
+
+.photo-item__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photo-item__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+.photo-item__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.photo-item__icon {
+  cursor: pointer;
+}
+
+.photo-item__likes {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $lipstick;
+}

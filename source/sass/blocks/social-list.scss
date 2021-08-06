@@ -1,0 +1,10 @@
+@import "global/variables";
+@import "global/mixins";
+
+.social-list {
+  @include list-reset;
+}
+
+.social-list__value {
+  font-size: 0;
+}

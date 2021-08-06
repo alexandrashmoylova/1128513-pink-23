@@ -1,0 +1,37 @@
+@import "global/variables";
+@import "global/mixins";
+
+.prices {
+  background-color: $grey-back;
+}
+
+.prices__list {
+  background-color: $white;
+}
+
+.prices__list-item {
+  background-color: $dark-blue;
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.prices__list-sticker {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.prices__list-value {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.prices__list-type {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}

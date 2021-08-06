@@ -1,0 +1,13 @@
+@import "global/variables";
+@import "global/mixins";
+
+.contacts {
+  background-color: $white;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+}

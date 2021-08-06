@@ -1,0 +1,19 @@
+@import "global/variables";
+@import "global/mixins";
+
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__item-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+}

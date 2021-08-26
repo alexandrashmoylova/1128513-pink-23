@@ -3,10 +3,30 @@
 
 .site-list {
   @include list-reset;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $black;
+  box-shadow: 1px 0 $black, inset 0 1px $white-opc;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    box-shadow: none;
+  }
 }
 
 .site-list__item-link {
@@ -16,4 +36,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: fade($lipstick, 30%);
+  }
 }

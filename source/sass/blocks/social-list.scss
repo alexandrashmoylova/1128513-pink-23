@@ -3,6 +3,8 @@
 
 .social-list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-list__value {

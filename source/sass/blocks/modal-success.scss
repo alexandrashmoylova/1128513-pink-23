@@ -1,2 +1,22 @@
 @import "global/variables";
 @import "global/mixins";
+
+.modal-success__wrapper {
+  padding: 44px 20px 52px;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 41px 52px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 162px 52px;
+  }
+}
+
+.modal-success__button {
+  padding: 23px 65px;
+}
+
+.modal-button__wrapper {
+  background-color: $grey-back;
+}

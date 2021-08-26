@@ -1,11 +1,9 @@
 @import "global/variables";
 @import "global/mixins";
 
-.download-list {
-  @include list-reset;
-  min-width: 204px;
+.slider {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }

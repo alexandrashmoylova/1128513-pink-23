@@ -1,2 +1,18 @@
 @import "global/variables";
 @import "global/mixins";
+
+.modal-check__wrapper {
+  padding: 44px 20px 52px;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 55px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 215px 52px;
+  }
+}
+
+.modal-check__button {
+  padding: 23px 124px;
+}

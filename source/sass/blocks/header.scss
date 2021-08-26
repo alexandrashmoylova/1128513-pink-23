@@ -3,36 +3,91 @@
 
 .header {
   @include reset;
-  background-color: $dark-blue;
-}
-
-.header__wrapper {
-  background-image:
-    url("img/back-mobile.png"),
-    url("img/phone.jpg"),
-    url("img/screen.png");
-  background-repeat: no-repeat;
-  background-size: auto, cover, cover;
-  background-position: auto;
+  background-color: $dwnld-back;
 }
 
 .header__logo {
+  cursor: pointer;
   width: 74px;
   height: 23px;
+  padding: 23px 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+    padding: 27px 43px 20px;
+  }
 }
 
+.header__logo:hover path {
+  fill: $lipstick;
+}
 
-.header__toggle {
-  width: 50px;
-  height: 24px;
-  cursor: pointer;
+.header__logo:active {
+  fill: $white-opc;
+}
+
+.header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+  }
+}
+
+.header__wraper-title {
+  padding: 36px 46px 51px;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 276px 104px;
+  }
 }
 
 .header__title {
-  @include reset;
+  margin: 0;
   font-size: 24px;
+  line-height: 33px;
   font-weight: 300;
-  line-height: 28px;
-  text-align: center;
   color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
+
+//   @media (min-width: $tablet-width) {
+//     height: 729px;
+//     background-image: url("../img/header-phone.png"),
+//       url("../img/back-mobile.png");
+//     background-repeat: no-repeat, no-repeat;
+//     background-size: 80%, cover;
+//     background-position: 80% 100%, 100%;
+//   }
+// }

@@ -1,2 +1,134 @@
 @import "global/variables";
 @import "global/mixins";
+
+.post__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $grey-back;
+}
+
+.post__text {
+  margin: 0;
+  padding: 49px 20px 52px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  background-color: $white;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 73px 119px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 389px 75px;
+  }
+}
+
+.post__container {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+.post__wrapper-image {
+  padding: 20px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0 54px 20px;
+    grid-column: 1/2;
+  }
+}
+
+.post__wrapper-image__photo {
+  width: 100%;
+}
+
+.post__filter-container {
+  @media (min-width: $tablet-width) {
+    padding: 57px 40px 54px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 60px 57px 90px;
+  }
+}
+
+.post__filter-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 69px 27px 57px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.post__filter-list__item {
+  margin-bottom: 52px;
+}
+
+.post__button-wrapper {
+  padding: 38px 20px 41px 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 175px;
+  }
+}
+
+.post__button-enter {
+  font-size: 18px;
+  padding: 21px 90px;
+  margin-bottom: 12px;
+  margin-top: 38px;
+  width: 100%;
+  background-color: transparent;
+  color: $lipstick;
+  border: 3px solid $lipstick;
+  border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 21px 42px;
+    margin-right: 44px;
+  }
+}
+
+.post__button-cancel {
+  font-size: 18px;
+  width: 100%;
+  background-color: transparent;
+  padding: 21px 103px;
+  color: $dark-blue;
+  border: 3px solid $dark-blue;
+  opacity: 0.1;
+  border-radius: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 55px;
+  }
+}

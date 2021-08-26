@@ -2,17 +2,90 @@
 @import "global/mixins";
 
 .download {
-  background-color: $dark-blue;
+  @include reset;
+  background-color: $dwnld-back;
 }
 
-.download__button {
+.download__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 636px;
+  }
+}
+
+
+.download__button {
+  display: block;
+  font-size: 18px;
+  border: 3px solid $white;
+  color: $white;
+  padding: 13px 13px;
+  width: 280px;
+  background-color: transparent;
+  margin-top: 348px;
+  margin-bottom: 32px;
+
+  &:hover {
+    color: $lipstick;
+    background-color: $white;
+    box-shadow: 0 5px 7px $white-opc75;
+  }
+
+  &:active {
+    color: fade($lipstick 30%);
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 300px;
+    margin-top: 39px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-top: 51px;
+    margin-bottom: 67px;
+  }
 }
 
 .download__text {
+  margin-top: 28px;
+  margin-bottom: 38px;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

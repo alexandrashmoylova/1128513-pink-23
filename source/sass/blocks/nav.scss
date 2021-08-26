@@ -3,4 +3,39 @@
 
 .nav {
   background-color: $dark-blue;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  padding: 0;
+  top: -39px;
+  right: 20px;
+  border: none;
+  background-color: $white;
+
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: fade($lipstick, 30%);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -47px;
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -1,9 +1,37 @@
 @import "global/variables";
 @import "global/mixins";
 
+.photo__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo__wrapper-text {
+  padding: 54px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 20px 85px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 314px 97px;
+  }
+}
+
 .photo__text {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.photo-list__wrapper {
+  padding: 0 20px;
 }

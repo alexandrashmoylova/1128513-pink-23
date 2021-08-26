@@ -7,6 +7,14 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
   background-color: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
 }

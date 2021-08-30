@@ -1,13 +1,22 @@
 @import "global/variables";
 @import "global/mixins";
 
+.post {
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
 .post__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $grey-back;
 }
 
 .post__text-wrapper {
+  width: 100%;
+  background-color: $white;
   padding: 49px 20px 52px 20px;
 
   @media (min-width: $tablet-width) {
@@ -34,25 +43,42 @@
 }
 
 .post__container {
-  background-color: $grey-back;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 45px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
   }
 }
 
 .post__wrapper-image {
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    padding: 57px 0 54px 20px;
   }
 }
 
 .post__wrapper-image__photo {
   width: 100%;
+}
+
+.post__filter-container {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 20px 41px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 20px 54px 0;
+  }
 }
 
 .post__filter-list {
@@ -74,19 +100,32 @@
   margin-bottom: 52px;
 }
 
+.post__range-svg {
+  fill: lighten($dark-blue, 30%);
+}
+
+.post__range-svg:hover {
+  fill: lighten($dark-blue, 50%);
+}
+
+.post__range-svg--current {
+  fill: $lipstick;
+}
+
 .post__button-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 38px 20px 41px 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
-    padding: 0;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 175px;
   }
@@ -125,13 +164,31 @@
   }
 }
 
+.post__button--enter:hover {
+  background-color: $lipstick;
+  color: $white;
+}
+
+.post__button--enter:active {
+  background-color: $lipstick;
+  opacity: 0.3;
+}
+
 .post__button--cancel {
   padding: 21px 23px;
   color: $dark-blue;
   border: 3px solid $dark-blue;
   opacity: 0.1;
+}
 
-  @media (min-width: $desktop-width) {
+.post__button--cancel:hover {
+  border: 3px solid $dark-blue;
+  color: $dark-blue;
+  opacity: 0.3;
+}
 
-  }
+.post__button--cancel:active {
+  background-color: $dark-blue;
+  opacity: 0.3;
+  color: darken($white, 30%);
 }

@@ -25,7 +25,7 @@
   padding: 25px 10px 26px 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 10px 31px 30px;
+    padding: 30px;
   }
 }
 
@@ -58,9 +58,16 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .photo-item__icon {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
   cursor: pointer;
 }
 
@@ -74,9 +81,9 @@
   color: $lipstick;
   margin-left: 18px;
 
-  // @media (min-width: $tablet-width) {
-  //   order: -1;
-  // }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-item__counter {

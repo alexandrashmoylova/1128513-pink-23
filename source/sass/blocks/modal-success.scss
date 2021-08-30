@@ -1,22 +1,33 @@
 @import "global/variables";
 @import "global/mixins";
 
-.modal-success__wrapper {
-  padding: 44px 20px 52px;
+.modal__wrapper-success {
+  padding: 44px 25px 41px;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 41px 52px 41px;
+    padding: 49px 41px 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 162px 52px;
+    padding: 49px 201px 44px;
   }
 }
 
 .modal-success__button {
-  padding: 23px 65px;
+  @media (min-width: $desktop-width) {
+    min-width: 456px;
+  }
 }
 
-.modal-button__wrapper {
+.modal-success__container {
   background-color: $grey-back;
+  padding: 52px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 162px;
+  }
 }

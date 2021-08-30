@@ -12,9 +12,10 @@
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
-  width: 100%;
+  min-width: 276px;
+  padding: 20px 10px;
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    min-width: 296px;
   }
 }

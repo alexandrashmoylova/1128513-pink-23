@@ -17,3 +17,9 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.photo-list__item-panorama {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}

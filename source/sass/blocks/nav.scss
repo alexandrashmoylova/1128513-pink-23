@@ -2,6 +2,7 @@
 @import "global/mixins";
 
 .nav {
+  min-width: 66px;
   background-color: $dark-blue;
   position: relative;
 
@@ -17,10 +18,11 @@
   height: 24px;
   cursor: pointer;
   padding: 0;
-  top: -39px;
+  top: -36px;
   right: 20px;
   border: none;
-  background-color: $white;
+  background-color: transparent;
+  z-index: 2;
 
   &:hover {
     color: $lipstick;
@@ -37,5 +39,60 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  border-radius: 1px;
+}
+
+.nav--closed .nav__toggle:hover::before {
+  background-color: $lipstick;
+  box-shadow: 0 8px 0 0 $lipstick, 0 16px 0 0 $lipstick;
+}
+
+.nav--closed .nav__toggle:active::before {
+  background-color: darken($lipstick, 30%);
+  box-shadow: 0 8px 0 0 darken($lipstick, 30%), 0 16px 0 0 darken($lipstick, 30%);
+}
+
+.nav--opened .nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 23px;
+    height: 3px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $lipstick;
+    box-shadow: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: darken($lipstick, 30%);
   }
 }

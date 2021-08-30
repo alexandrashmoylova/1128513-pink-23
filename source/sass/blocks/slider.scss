@@ -3,7 +3,27 @@
 
 .slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+}
+
+.slider__button {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $dark-blue;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+
+.slider__button:last-of-type {
+  margin-right: 0;
+}
+
+.slider__button--current {
+  background-color: $white;
+  box-shadow: 0 0 0 3px $dark-blue;
+  opacity: 1;
 }

@@ -48,6 +48,6 @@
   }
 
   &:active {
-    color: fade($lipstick, 30%);
+    color: darken($lipstick, 30%);
   }
 }

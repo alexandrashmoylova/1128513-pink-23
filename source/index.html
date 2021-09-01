@@ -109,6 +109,9 @@
         <div class="advantages__wrapper-list">
           <ul class="advantages__list">
             <li class="advantages__list-item">
+              <div class="advantages__img  advantages__img--hidden">
+              <img class="advantages__img-item advantages__img-item--grey" src="img/iphone/iphone-grey-desktop.png" srcset="img/iphone/iphone-grey-desktop@2x.png 2x" width="186" height="382" alt="Изображение iphone с серым фоном">
+            </div>
               <h3 class="advantages__list-title">Поднимает настроение</h3>
               <p class="advantages__list-text">
                 Приложение позволит вам победить осеннюю хандру и&nbsp;депрессиию
@@ -116,6 +119,9 @@
               </p>
             </li>
             <li class="advantages__list-item">
+              <div class="advantages__img  advantages__img--hidden">
+              <img class="advantages__img-item advantages__img-item--pink" src="img/iphone/iphone-pink-desktop.png" srcset="img/iphone/iphone-pink-desktop@2x.png 2x" width="186" height="382" alt="Изображение iphone с розовым фоном">
+            </div>
               <h3 class="advantages__list-title">Меняет мир вокруг</h3>
               <p class="advantages__list-text">
                 Сделайте снимок и&nbsp;украсьте его смайликом или текстовой
@@ -123,6 +129,15 @@
               </p>
             </li>
             <li class="advantages__list-item">
+              <div class="advantages__img">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/iphone/iphone-hi-desktop.png 1x, img/iphone/iphone-hi-desktop@2x.png 2x">
+                  <source media="(min-width: 600px)"
+                  srcset="img/iphone/iphone-hi-tablet.png 1x, img/iphone/iphone-hi-tablet@2x.png 2x">
+                <img class="advantages__img-item advantages__img-item--hi" src="img/iphone/iphone-hi-mobile.png" srcset="img/iphone/iphone-hi-mobile@2x.png" width="157" height="320" alt="Изображение iphone со смайлом">
+              </picture>
+              </div>
               <h3 class="advantages__list-title">Заводит новых друзей</h3>
               <p class="advantages__list-text">
                 Ставьте лайки, комментируйте, делитесь фотографиями
@@ -130,17 +145,6 @@
               </p>
             </li>
           </ul>
-          <div class="advantages__img">
-            <img class="advantages__img-item advantages__img-item--hidden" src="img/iphone/iphone-grey-desktop.png" srcset="img/iphone/iphone-grey-desktop@2x.png 2x" width="186" height="382" alt="Изображение iphone с серым фоном">
-            <img class="advantages__img-item advantages__img-item--hidden" src="img/iphone/iphone-pink-desktop.png" srcset="img/iphone/iphone-pink-desktop@2x.png 2x" width="186" height="382" alt="Изображение iphone с розовым фоном">
-            <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/iphone/iphone-hi-desktop.png 1x, img/iphone/iphone-hi-desktop@2x.png 2x">
-              <source media="(min-width: 600px)"
-              srcset="img/iphone/iphone-hi-tablet.png 1x, img/iphone/iphone-hi-tablet@2x.png 2x">
-            <img class="advantages__img-item advantages__img-item--hi" src="img/iphone/iphone-hi-mobile.png" srcset="img/iphone/iphone-hi-mobile@2x.png" width="157" height="320" alt="Изображение iphone со смайлом">
-          </picture>
-          </div>
         </div>
       </div>
     </section>
@@ -156,7 +160,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="reviews__wrapper">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
@@ -193,7 +197,7 @@
               <span class="prices__list-value">9.99 USD</span></th>
           </tr>
           <tr class="prices__list-row">
-            <td class="prices__list-type prices__list-type--hiden">Розовый фильтр</td>
+            <td class="prices__list-type prices__list-type--hiden"><span class="prices__list-type__name">Розовый фильтр</span></td>
             <td class="prices__list-type">
               <span class="prices__list-name">Розовый фильтр</span>
               <span class="prices__list-icon prices__list-icon--yes"></span>
@@ -208,7 +212,7 @@
             </td>
           </tr>
           <tr class="prices__list-row">
-            <td class="prices__list-type prices__list-type--hiden">Смайлики</td>
+            <td class="prices__list-type prices__list-type--hiden"><span class="prices__list-type__name">Смайлики</span></td>
             <td class="prices__list-type">
               <span class="prices__list-name">Смайлики</span>
               <span class="prices__list-icon prices__list-icon--no"></span>
@@ -223,7 +227,7 @@
             </td>
           </tr>
           <tr>
-            <td class="prices__list-type prices__list-type--hidden">Комментарии</td>
+            <td class="prices__list-type prices__list-type--hidden"><span class="prices__list-type__name">Комментарии</span></td>
             <td class="prices__list-type">
               <span class="prices__list-name">Комментарии</span>
               <span class="prices__list-icon prices__list-icon--no"></span>

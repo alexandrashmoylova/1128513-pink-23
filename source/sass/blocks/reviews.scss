@@ -2,13 +2,35 @@
 
 .reviews {
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 79px;
+      height: 63px;
+      position: absolute;
+      top: 62px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
 }
 
 .reviews__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 50px 20px 60px 20px;
+  padding: 193px 20px 60px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .reviews__item {
@@ -57,5 +79,11 @@
     order: -1;
     margin-bottom: 50px;
     padding: 0 256px;
+  }
+}
+
+.reviews__slider {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

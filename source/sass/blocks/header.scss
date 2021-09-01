@@ -3,14 +3,12 @@
 
 .header {
   @include reset;
-  background-color: $dwnld-back;
-  background-image: url("../img/back-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top center;
+  background-color: $black-opc3;
+  position: absolute;
+  width: 100%;
 }
 
-.header__logo {
+.header__logo-link {
   cursor: pointer;
   width: 74px;
   height: 23px;
@@ -26,6 +24,15 @@
 .header__logo-mobile {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__logo path:hover {
+  fill: $lipstick;
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
   }
 }
 

@@ -51,3 +51,18 @@
     color: darken($lipstick, 30%);
   }
 }
+
+.site-list__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
+
+    &:hover {
+      border-color: $lipstick;
+    }
+  }
+
+  &:active {
+    border-color: $white;
+    opacity: 0.3;
+  }
+}

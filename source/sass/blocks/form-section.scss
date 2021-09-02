@@ -1,2 +1,37 @@
 @import "global/variables";
 @import "global/mixins";
+
+.form-section {
+  background-color: $dark-blue;
+  background-image: url("../img/background/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -15px center;
+}
+
+.form-section__wrapper-title {
+  padding: 106px 46px 51px;
+
+  @media (min-width: $tablet-width) {
+    padding: 81px 20px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 222px 104px;
+  }
+}
+
+
+.form-section__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

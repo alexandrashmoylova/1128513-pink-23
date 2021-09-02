@@ -15,6 +15,23 @@
   min-width: 276px;
   padding: 20px 10px;
 
+  &:hover {
+    background-color: $green-darken;
+    border-color: $green-darken;
+  }
+
+  &:active {
+    background-color: $green-darken;
+    border-color: $green-darken;
+    color: $white-opc03;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+    border-color: $light-grey;
+    color: $white;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 296px;
   }

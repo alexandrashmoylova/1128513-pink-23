@@ -1,8 +1,18 @@
 @import "global/variables";
 @import "global/mixins";
 
+.modal-check {
+  display: none;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  margin: 0 auto;
+}
+
 .modal__wrapper-check {
-  padding: 44px 55px 40px;
+  padding: 44px 23px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 49px 55px 54px;

@@ -1,6 +1,15 @@
 @import "global/variables";
 @import "global/mixins";
 
+.modal-success {
+  position: fixed;
+  top: 130px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .modal__wrapper-success {
   padding: 44px 25px 41px;
 

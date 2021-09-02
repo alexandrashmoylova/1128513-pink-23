@@ -40,6 +40,10 @@
   @media (min-width: $tablet-width) {
     position: static;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .prices__list-item {

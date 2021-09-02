@@ -2,6 +2,7 @@
 @import "global/mixins";
 
 .modal-success {
+  display: none;
   position: fixed;
   top: 130px;
   bottom: auto;
@@ -11,7 +12,7 @@
 }
 
 .modal__wrapper-success {
-  padding: 44px 25px 41px;
+  padding: 44px 27px 41px;
 
   @media (min-width: $tablet-width) {
     padding: 49px 41px 35px;

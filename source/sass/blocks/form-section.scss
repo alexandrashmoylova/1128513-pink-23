@@ -7,13 +7,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top -15px center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/back-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background/back-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/back-tablet@2x.png");
+    }
+  }
 }
 
 .form-section__wrapper-title {
   padding: 106px 46px 51px;
 
   @media (min-width: $tablet-width) {
-    padding: 81px 20px 74px;
+    padding: 167px 20px 74px;
   }
 
   @media (min-width: $desktop-width) {

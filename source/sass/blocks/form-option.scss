@@ -136,6 +136,34 @@
   margin-bottom: 38px;
 }
 
+.form-option__wrapper-contacts {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/svg/phone-icon.svg");
+      background-repeat: no-repeat;
+      width: 59px;
+      height: 59px;
+      right: 0;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/svg/mail-icon.svg");
+      background-repeat: no-repeat;
+      width: 59px;
+      height: 59px;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
 .form-option__checkbox {
   display: none;
 }
@@ -274,9 +302,9 @@ textarea::placeholder {
 .form-option__window {
   border: 2px solid $light-grey;
   border-radius: 1px;
-  padding: 23px 20px;
+  padding: 0 20px;
+  height: 56px;
 }
-
 
 .form-option__title+.form-option__window:hover {
   border-color: $dark-blue;

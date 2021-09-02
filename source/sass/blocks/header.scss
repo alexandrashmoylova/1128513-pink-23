@@ -3,10 +3,12 @@
 
 .header {
   @include reset;
-  background-color: $dwnld-back;
+  background-color: $black-opc3;
+  position: absolute;
+  width: 100%;
 }
 
-.header__logo {
+.header__logo-link {
   cursor: pointer;
   width: 74px;
   height: 23px;
@@ -19,17 +21,18 @@
   }
 }
 
-.header__logo:hover path {
-  fill: $lipstick;
-}
-
-.header__logo:active {
-  fill: $white-opc;
-}
-
 .header__logo-mobile {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__logo path:hover {
+  fill: $lipstick;
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
   }
 }
 
@@ -42,10 +45,6 @@
 .header__wrapper {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/back-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -67,27 +66,3 @@
     padding: 74px 276px 104px;
   }
 }
-
-.header__title {
-  margin: 0;
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 300;
-  color: $white;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-}
-
-//   @media (min-width: $tablet-width) {
-//     height: 729px;
-//     background-image: url("../img/header-phone.png"),
-//       url("../img/back-mobile.png");
-//     background-repeat: no-repeat, no-repeat;
-//     background-size: 80%, cover;
-//     background-position: 80% 100%, 100%;
-//   }
-// }

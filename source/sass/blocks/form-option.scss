@@ -61,8 +61,11 @@
 }
 
 .form-option__group-app {
+  background-color: $grey-back;
+
   @media (min-width: $tablet-width) {
     grid-row: 2/4;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,6 +77,12 @@
 }
 
 .form-option__group-achievments {
+  background-color: $grey-back;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
   @media (min-width: $desktop-width) {
     grid-row: 3/4;
     grid-column: 1/-1;

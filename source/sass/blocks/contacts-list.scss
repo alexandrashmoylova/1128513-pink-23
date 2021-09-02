@@ -19,6 +19,7 @@
 
 .contacts-list__item {
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .contacts-list__item--email {
@@ -53,4 +54,15 @@
   font-weight: 300;
   line-height: 33px;
   color: $lipstick;
+
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $dark-blue;
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }

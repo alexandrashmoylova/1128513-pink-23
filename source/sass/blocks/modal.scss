@@ -2,10 +2,20 @@
 @import "global/mixins";
 
 .modal {
+  min-width: 320px;
   background-color: $white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+
+.modal__wrapper-check {
+  padding: 44px 20px 50px;
+}
+
+.modal__wrapper-success {
+  padding: 44px 27px 41px;
 }
 
 .modal__title {
@@ -28,7 +38,6 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

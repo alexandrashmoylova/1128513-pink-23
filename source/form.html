@@ -79,7 +79,7 @@
     <section class="form">
         <h2 class="visually-hidden">Конкурс на путешесвие</h2>
         <div class="form__wrapper-text">
-        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!<span class="form__text--hiden">Пожалуйста, заполните форму ниже:</span> </p>
+        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! <span class="form__text--hiden">Пожалуйста, заполните форму ниже:</span> </p>
       </div>
       <div class="form__wrapper">
         <form class="form-option" action="https://echo.htmlacademy.ru" method="post">
@@ -100,6 +100,7 @@
           </fieldset>
             <fieldset class="form-option__group form-option__group-achievments">
               <legend class="form-option__title form-option__title--achievments">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+              <div class="form-option__container-list">
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="selfie" id="selfie" checked>
                 <label class="form-option__info form-option__info-achievments" for="selfie">Сделал селфи с&nbsp;акулой</label>
@@ -124,17 +125,20 @@
                 <input class="form-option__checkbox" type="checkbox" name="hotel" id="hotel">
                 <label class="form-option__info form-option__info-achievments" for="hotel">Разгромил отель</label>
               </div>
+            </div>
             </fieldset>
           <fieldset class="form-option__group form-option__group-contacts">
             <legend class="form-option__title form-option__title--contacts">Контактная информация</legend>
-            <div class="form-option__wrapper form-option__wrapper-contacts">
+            <div class="form-option__container-contacts">
+            <div class="form-option__wrapper form-option__wrapper-contacts--telephone">
               <label class="form-option__title form-option__title--info" for="tel">Номер телефона</label>
               <input class="form-option__window" type="text" name="telephone" placeholder="Номер, пожалуйста" id="tel">
             </div>
-            <div class="form-option__wrapper">
+            <div class="form-option__wrapper form-option__wrapper-contacts--email">
               <label class="form-option__title form-option__title--info" for="email">Адрес почты</label>
               <input class="form-option__window" type="text" name="email" placeholder="Введите почту *" id="email" required>
             </div>
+          </div>
           </fieldset>
             <fieldset class="form-option__group form-option__group-app">
               <legend class="form-option__title form-option__title--app">С&nbsp;каким приложением путешествовали?</legend>

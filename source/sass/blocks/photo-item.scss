@@ -2,11 +2,15 @@
 @import "global/mixins";
 
 .photo-item {
+  background-color: $grey-back;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .photo-item__photo {
-  width: 100%;
+  display: block;
+  width: 280px;
+  height: 180px;
 }
 
 .photo-item__sticker {
@@ -21,7 +25,6 @@
 }
 
 .photo-item__container {
-  background-color: $grey-back;
   padding: 25px 10px 26px 17px;
 
   @media (min-width: $tablet-width) {

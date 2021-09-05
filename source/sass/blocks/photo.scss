@@ -1,18 +1,12 @@
 @import "global/variables";
 @import "global/mixins";
 
-.photo__container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+.photo {
+  background-color: $white;
 }
 
 .photo__wrapper-title {
-  padding: 36px 74px 84px;
-  background-color: $dark-blue;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 102px 74px 84px;
 
   @media (min-width: $tablet-width) {
     padding: 81px 151px 143px 151px;
@@ -34,7 +28,7 @@
 }
 
 .photo__wrapper-text {
-  padding: 54px 20px 60px;
+  padding: 54px 37px 60px;
 
   @media (min-width: $tablet-width) {
     padding: 100px 20px 85px;
@@ -57,8 +51,19 @@
   }
 }
 
-.photo-list__wrapper {
+.photo__wrapper {
+  width: 100%;
+}
+
+.photo__panorama {
+  display: block;
+  width: 100%;
+}
+
+.photo__wrapper-list {
+  width: 100%;
   padding: 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;

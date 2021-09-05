@@ -81,3 +81,9 @@
 .form__text-required sup {
   color: $lipstick;
 }
+
+.form__text-required--hiden {
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
+}

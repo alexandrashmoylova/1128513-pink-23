@@ -1,0 +1,10 @@
+@import "global/variables";
+@import "global/mixins";
+
+.photo-section {
+  background-color: $dark-blue;
+  background-image: url("../img/background/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -15px center;
+}

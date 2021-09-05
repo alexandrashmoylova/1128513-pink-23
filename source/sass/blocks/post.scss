@@ -15,7 +15,6 @@
 }
 
 .post__text-wrapper {
-  width: 100%;
   background-color: $white;
   padding: 49px 20px 52px 20px;
 
@@ -68,16 +67,28 @@
 }
 
 .post__wrapper-image__photo {
+  display: block;
   width: 100%;
 }
 
 .post__filter-container {
   display: flex;
   flex-direction: column;
-  padding: 42px 20px 41px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 20px 54px 0;
+  }
+}
+
+.post__filter-wrapper {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    bottom: -13px;
+    background-color: darken($grey-back, 10%);
   }
 }
 
@@ -87,7 +98,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 42px 69px 27px 57px;
+  padding: 27px 57px 27px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -98,6 +109,31 @@
 
 .post__filter-list__item {
   margin-bottom: 52px;
+}
+
+.post-container__range-contrast {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    background-color: $dark-blue;
+    top: 82px;
+    right: -22px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    border: 2px solid $lipstick;
+    border-radius: 50%;
+    top: 74px;
+    right: 5px;
+  }
 }
 
 .post__range-svg {
@@ -117,6 +153,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  padding: 38px 20px 41px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
@@ -149,7 +186,6 @@
 .post__button--enter {
   padding: 21px 20px;
   margin-bottom: 12px;
-  margin-top: 38px;
   color: $lipstick;
   border: 3px solid $lipstick;
 

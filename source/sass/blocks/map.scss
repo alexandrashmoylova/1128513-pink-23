@@ -5,6 +5,61 @@
   position: relative;
   margin: 0;
   width: 100%;
+  background-image: url("../img/map/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 200px;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map/map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map/map-tablet.png");
+    background-size: cover;
+    background-position: top center;
+    min-height: 374px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/map-tablet@2x.png");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $lipstick;
+    border: 10px solid $white;
+    border-radius: 50%;
+    left: 142px;
+    top: 95px;
+    z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      left: 312px;
+      top: 194px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-mobile.png");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 123px;
+    top: -91px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/triangle-tablet.png");
+      width: 660px;
+      top: -50px;
+    }
+  }
 }
 
 .map__iframe {

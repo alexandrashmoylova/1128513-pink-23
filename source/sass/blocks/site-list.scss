@@ -26,6 +26,7 @@
   @media (min-width: $desktop-width) {
     border: none;
     box-shadow: none;
+    padding-bottom: 20px;
   }
 }
 
@@ -55,6 +56,7 @@
 .site-list__item--active {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white;
+    padding-bottom: 19px;
 
     &:hover {
       border-color: $lipstick;

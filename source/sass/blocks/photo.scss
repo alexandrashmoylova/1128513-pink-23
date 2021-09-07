@@ -69,6 +69,10 @@
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      top: 64px;
+    }
   }
 
   &::after {
@@ -79,6 +83,10 @@
     background-color: $lipstick;
     top: 0;
     right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
   }
 }
 

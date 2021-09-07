@@ -9,11 +9,20 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    row-gap: 54px;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo-list__item {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }
 

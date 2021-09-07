@@ -22,8 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 131px;
-    padding-right: 166px;
+    padding: 17px 245px 67px 130px;
   }
 }
 
@@ -54,6 +53,14 @@
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
+    margin-top: 115px;
+    margin-bottom: 37px;
+  }
+}
+
+.article__title--hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -67,6 +74,16 @@
 .article__text {
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.article__text--hidden {
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
 }
 
 .article__link {

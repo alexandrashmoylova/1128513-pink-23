@@ -49,7 +49,7 @@
             fill="white" />
         </svg>
       </a>
-      <!-- <nav class="nav nav--closed nav--opened nav--nojs">
+      <nav class="nav nav--closed nav--opened nav--nojs">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -67,7 +67,7 @@
             <a class="site-list__item-link" href="https://htmlacademy.ru/study">Html Academy</a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
     </div>
   </header>
   <main class="main main-photo">
@@ -84,7 +84,13 @@
         </div>
         <div class="photo__wrapper-panorama">
           <a class="photo__link" href="#">
-            <img class="photo__panorama" src="img/panorama-mobile.jpg" width="320" height="137" alt="Паноромный вид с подвесного моста">
+            <picture>
+              <source media="(min-width: 1200px)"
+              srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+              srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.png 2x">
+            <img class="photo__panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Паноромный вид с подвесного моста">
+          </picture>
           </a>
         </div>
         <div class="photo__wrapper-list">
@@ -106,7 +112,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-car-mobile.jpg" width="280" height="180" alt="Фотография съемок">
+                  <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/photo-car-desktop.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 600px)"
+                  srcset="img/photo-car-tablet.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-car-mobile.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография съемок">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -125,7 +137,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-drums-mobile.jpg" width="280" height="180" alt="Фотография барабанной установки">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                    srcset="img/photo-drums-desktop.jpg 1x, img/photo-drums-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)"
+                    srcset="img/photo-drums-tablet.jpg 1x, img/photo-drums-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-drums-mobile.jpg" srcset="img/photo-drums-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография барабанной установки">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -144,7 +162,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-sky-mobile.jpg" width="280" height="180" alt="Фотография витражного здания">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                    srcset="img/photo-sky-desktop.jpg 1x, img/photo-sky-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)"
+                    srcset="img/photo-sky-tablet.jpg 1x, img/photo-sky-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-sky-mobile.jpg" srcset="img/photo-sky-mobile@2x.jpg 2x"width="280" height="180" alt="Фотография витражного здания">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -163,7 +187,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-market-mobile.jpg" width="280" height="180" alt="Фотография ярмарки Кубанской Бахчи">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                    srcset="img/photo-market-desktop.jpg 1x, img/photo-market-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)"
+                    srcset="img/photo-market-tablet.jpg 1x, img/photo-market-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-market-mobile.jpg" srcset="img/photo-market-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография ярмарки Кубанской Бахчи">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -182,7 +212,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-rocks-mobile.jpg" width="280" height="180" alt="Фотография оврага с высоты">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                    srcset="img/photo-rocks-desktop.jpg 1x, img/photo-rocks-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)"
+                    srcset="img/photo-rocks-tablet.jpg 1x, img/photo-rocks-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-rocks-mobile.jpg" srcset="img/photo-rocks-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография оврага с высоты">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -201,7 +237,13 @@
             <li class="photo-list__item photo-item">
               <div class="photo__wrapper">
                 <a class="photo__link">
-                <img class="photo-item__photo" src="img/photo-flight-mobile.jpg" width="280" height="180" alt="Фотография крыла самолета в полете">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                    srcset="img/photo-flight-desktop.jpg 1x, img/photo-flight-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)"
+                    srcset="img/photo-flight-tablet.jpg 1x, img/photo-flight-tablet@2x.jpg 2x">
+                <img class="photo-item__photo" src="img/photo-flight-mobile.jpg"  srcset="img/photo-flight-mobile@2x.jpg 2x"width="280" height="180" alt="Фотография крыла самолета в полете">
+                </picture>
               </a>
               </div>
               <div class="photo-item__container">
@@ -229,12 +271,18 @@
         </div>
         <div class="post__container">
           <div class="post__wrapper-image">
-            <img class="post__wrapper-image__photo" src="img/photo-winter-mobile.jpg" width="280" height="374" alt="Фотография снежной дороги">
+            <picture>
+              <source media="(min-width: 1200px)"
+              srcset="img/photo-winter-desktop.jpg 1x, img/photo-winter-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+              srcset="img/photo-winter-tablet.jpg 1x, img/photo-winter-tablet@2x.jpg 2x">
+            <img class="post__wrapper-image__photo" src="img/photo-winter-mobile.jpg" srcset="img/photo-winter-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография снежной дороги">
+            </picture>
           </div>
           <div class="post__filter-container">
             <div class="post__filter-wrapper">
             <ul class="post__filter-list">
-              <li class="post__filter-list__item">
+              <li class="post__filter-list__item post__filter-list__item-cropp">
                 <div class="post-container__range-cropp">
                   <svg class="post__range-svg post__range-svg--current" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"
@@ -242,7 +290,7 @@
                   </svg>
                 </div>
               </li>
-              <li class="post__filter-list__item">
+              <li class="post__filter-list__item post__filter-list__item-fill">
                 <div class="post-container__range-fill">
                   <svg class="post__range-svg" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
@@ -254,7 +302,7 @@
                   </svg>
                 </div>
               </li>
-              <li class="post__filter-list__item">
+              <li class="post__filter-list__item post__filter-list__item-contrast">
                 <div class="post-container__range-contrast">
                   <svg class="post__range-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">

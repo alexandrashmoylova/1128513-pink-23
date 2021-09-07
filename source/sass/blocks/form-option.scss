@@ -159,6 +159,7 @@
 
 .form-option__wrapper-contacts--telephone {
   position: relative;
+
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
@@ -179,6 +180,7 @@
 
 .form-option__wrapper-contacts--email {
   position: relative;
+
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
@@ -213,7 +215,7 @@
   }
 }
 
-.form-option__checkbox:checked+.form-option__info-achievments::before {
+.form-option__checkbox:checked + .form-option__info-achievments::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -311,7 +313,7 @@
   }
 }
 
-.form-option__radio:checked+.form-option__info-app::before {
+.form-option__radio:checked + .form-option__info-app::before {
   background-image: url("../img/svg/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -353,10 +355,10 @@ textarea::placeholder {
   height: 56px;
 }
 
-.form-option__title+.form-option__window:hover {
+.form-option__title + .form-option__window:hover {
   border-color: $dark-blue;
 }
 
-.form-option__title+.form-option__window:checked {
+.form-option__title + .form-option__window:checked {
   border-color: $lipstick;
 }

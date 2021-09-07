@@ -2,12 +2,13 @@
 @import "global/mixins";
 
 .modal {
-  min-width: 320px;
+  width: 320px;
   background-color: $white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  box-shadow: 7px 15px $modal-shadow;
 }
 
 .modal__wrapper-check {

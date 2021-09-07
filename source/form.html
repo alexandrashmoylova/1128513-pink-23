@@ -71,82 +71,88 @@
     </div>
   </header>
   <main class="main main-form">
-    <section class="form-section form">
-      <div class="form__wrapper-title">
-      <h1 class="form__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
+    <section class="form-section">
+      <div class="form-section__wrapper-title">
+      <h1 class="form-section__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
     </div>
+    </section>
+    <section class="form">
         <h2 class="visually-hidden">Конкурс на путешесвие</h2>
         <div class="form__wrapper-text">
-        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! <span class="form__text--hiden">Пожалуйста, заполните форму ниже:</span> </p>
       </div>
       <div class="form__wrapper">
         <form class="form-option" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-option__group form-option__group-name">
             <legend class="form-option__title visually-hidden">Заполните ваши данные</legend>
             <div class="form-option__wrapper form-option__wrapper-name">
-              <label class="form-option__title form-option__title--name" for="last-name">Фамилия</label>
+              <label class="form-option__title form-option__title--name" for="last-name">Фамилия:</label>
               <input class="form-option__window" type="text" name="last-name" placeholder="Укажите фамилию *" id="last-name" required>
             </div>
             <div class="form-option__wrapper form-option__wrapper-name">
-              <label class="form-option__title form-option__title--name" for="first-name">Имя</label>
+              <label class="form-option__title form-option__title--name" for="first-name">Имя:</label>
               <input class="form-option__window" type="text" name="first-name" placeholder="Введите ваше имя *" id="first-name" required>
             </div>
             <div class="form-option__wrapper form-option__wrapper-name">
-              <label class="form-option__title form-option__title--name" for="middle-name">Отчество</label>
+              <label class="form-option__title form-option__title--name" for="middle-name">Отчество:</label>
               <input class="form-option__window" type="text" name="middle-name" placeholder="Ну и отчество тоже" id="middle-name">
             </div>
           </fieldset>
             <fieldset class="form-option__group form-option__group-achievments">
               <legend class="form-option__title form-option__title--achievments">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+              <div class="form-option__container-list">
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="selfie" id="selfie" checked>
-                <label class="form-option__info" for="selfie">Сделал селфи с&nbsp;акулой</label>
+                <label class="form-option__info form-option__info-achievments" for="selfie">Сделал селфи с&nbsp;акулой</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="sunburned" id="sunburn" checked>
-                <label class="form-option__info" for="sunburn">Обгорел на&nbsp;пляже</label>
+                <label class="form-option__info form-option__info-achievments" for="sunburn">Обгорел на&nbsp;пляже</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
-                <label class="form-option__info" for="chuck-norris">Видел Чака Норриса</label>
+                <label class="form-option__info form-option__info-achievments" for="chuck-norris">Видел Чака Норриса</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-                <label class="form-option__info" for="souvenirs">Накупил сувениров</label>
+                <label class="form-option__info form-option__info-achievments" for="souvenirs">Накупил сувениров</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="castle" id="castle" checked>
-                <label class="form-option__info" for="castle">Удержал башню</label>
+                <label class="form-option__info form-option__info-achievments" for="castle">Удержал башню</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-checkbox">
                 <input class="form-option__checkbox" type="checkbox" name="hotel" id="hotel">
-                <label class="form-option__info" for="hotel">Разгромил отель</label>
+                <label class="form-option__info form-option__info-achievments" for="hotel">Разгромил отель</label>
               </div>
+            </div>
             </fieldset>
           <fieldset class="form-option__group form-option__group-contacts">
             <legend class="form-option__title form-option__title--contacts">Контактная информация</legend>
-            <div class="form-option__wrapper">
+            <div class="form-option__container-contacts">
+            <div class="form-option__wrapper form-option__wrapper-contacts--telephone">
               <label class="form-option__title form-option__title--info" for="tel">Номер телефона</label>
               <input class="form-option__window" type="text" name="telephone" placeholder="Номер, пожалуйста" id="tel">
             </div>
-            <div class="form-option__wrapper">
+            <div class="form-option__wrapper form-option__wrapper-contacts--email">
               <label class="form-option__title form-option__title--info" for="email">Адрес почты</label>
               <input class="form-option__window" type="text" name="email" placeholder="Введите почту *" id="email" required>
             </div>
+          </div>
           </fieldset>
             <fieldset class="form-option__group form-option__group-app">
               <legend class="form-option__title form-option__title--app">С&nbsp;каким приложением путешествовали?</legend>
               <div class="form-option__wrapper form-option__wrapper-radio">
                 <input class="form-option__radio" type="radio" name="ios" id="ios" checked>
-                <label class="form-option__info" for="ios">Pink для iOS</label>
+                <label class="form-option__info form-option__info-app" for="ios">Pink для iOS</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-radio">
                 <input class="form-option__radio" type="radio" name="android" id="android">
-                <label class="form-option__info" for="android">Pink на Android</label>
+                <label class="form-option__info form-option__info-app" for="android">Pink на Android</label>
               </div>
               <div class="form-option__wrapper form-option__wrapper-radio">
                 <input class="form-option__radio" type="radio" name="windows" id="windows">
-                <label class="form-option__info" for="windows">Windows Phone</label>
+                <label class="form-option__info form-option__info-app" for="windows">Windows Phone</label>
               </div>
             </fieldset>
             <fieldset class="form-option__group form-option__group-emotions">
@@ -158,7 +164,7 @@
           <button class="form__submit form-button" type="submit">Отправить форму</button>
           <p class="form__text-required">
             <sup>*</sup>
-            - Обязательные поля
+            - Обязательные <span class="form__text-required--hiden">для заполнения</span> поля
           </p>
         </div>
       </div>
@@ -176,7 +182,7 @@
     <section class="modal-success modal">
       <div class="modal__wrapper-success">
         <h2 class="modal__title">Ваша заявка отправлена!</h2>
-        <p class="modal__text">Спасибо ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;рассмотрим ее&nbsp;оповестим вас.</p>
+        <p class="modal__text">Спасибо ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;рассмотрим ее&nbsp; и <br>оповестим вас.</p>
       </div>
         <div class="modal-success__container">
         <button class="modal-success__button form-button">Закрыть окно</button>

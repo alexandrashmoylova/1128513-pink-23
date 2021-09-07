@@ -2,11 +2,29 @@
 @import "global/mixins";
 
 .photo-item {
+  background-color: $grey-back;
   margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-item__photo {
-  width: 100%;
+  display: block;
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .photo-item__sticker {
@@ -21,7 +39,6 @@
 }
 
 .photo-item__container {
-  background-color: $grey-back;
   padding: 25px 10px 26px 17px;
 
   @media (min-width: $tablet-width) {
@@ -51,6 +68,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.photo-item__text:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .photo-item__wrapper {

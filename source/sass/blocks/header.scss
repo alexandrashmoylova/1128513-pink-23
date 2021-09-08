@@ -21,14 +21,12 @@
   }
 }
 
-.header__logo-mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
+.header__logo {
+  fill: $white;
 
-.header__logo path:hover {
-  fill: $lipstick;
+  &:hover {
+    fill: $lipstick;
+  }
 
   &:active {
     fill: $white;
@@ -36,8 +34,24 @@
   }
 }
 
+.header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .header__logo-tablet {
   @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  @media (max-width: $desktop-width-only) {
     display: none;
   }
 }

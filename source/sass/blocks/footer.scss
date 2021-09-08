@@ -42,7 +42,33 @@
 }
 
 .footer__link-glasses {
+  fill: $dark-blue;
   margin-right: 12px;
+
+  &:hover {
+    fill: $lipstick;
+  }
+
+  &:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer__link-glasses--desktop {
+  fill: $dark-blue;
+
+  &:hover {
+    fill: $lipstick;
+  }
+
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
 }
 
 .footer__social {

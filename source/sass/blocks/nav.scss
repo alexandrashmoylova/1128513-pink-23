@@ -11,7 +11,7 @@
   }
 }
 
-.nav__toggle {
+.header .nav__toggle {
   position: absolute;
   display: block;
   width: 50px;
@@ -24,12 +24,16 @@
   background-color: transparent;
   z-index: 2;
 
-  &:hover {
-    color: $lipstick;
-  }
-
-  &:active {
-    color: fade($lipstick, 30%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+    border-radius: 1px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,29 +46,18 @@
   }
 }
 
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: $white;
-  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
-  border-radius: 1px;
-}
 
-.nav--closed .nav__toggle:hover::before {
+.header .nav__toggle:hover::before {
   background-color: $lipstick;
   box-shadow: 0 8px 0 0 $lipstick, 0 16px 0 0 $lipstick;
 }
 
-.nav--closed .nav__toggle:active::before {
+.header .nav__toggle:active::before {
   background-color: darken($lipstick, 30%);
   box-shadow: 0 8px 0 0 darken($lipstick, 30%), 0 16px 0 0 darken($lipstick, 30%);
 }
 
-.nav--opened .nav__toggle {
+.header--open .nav__toggle {
   &::before,
   &::after {
     content: "";
@@ -95,4 +88,11 @@
   &:active::after {
     background-color: darken($lipstick, 30%);
   }
+}
+
+.header--open ul,
+.header--nojs ul {
+  display: block;
+  position: absolute;
+  width: 100%;
 }

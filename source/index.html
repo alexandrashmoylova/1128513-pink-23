@@ -27,7 +27,7 @@
           <use xlink:href="img/sprite.svg#icon-desktop"></use>
         </svg>
       </a>
-      <nav class="nav nav--closed nav--opened nav--nojs">
+      <nav class="nav">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -305,6 +305,16 @@
       </p>
     </div>
   </footer>
+  <script>
+    var nav = document.querySelector('.header');
+    var navToggle = document.querySelector('.nav__toggle');
+
+    header.classList.remove('nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    header.classList.toggle('nav--open')})
+
+  </script>
 </body>
 
 </html>

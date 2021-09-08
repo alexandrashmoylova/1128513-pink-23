@@ -147,6 +147,7 @@
   margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
     text-align: left;
   }
 
@@ -185,10 +186,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    position: relative;
     order: -1;
     margin-bottom: 56px;
-    overflow: hidden;
+    overflow-y: clip;
+    top: 12px;
+    left: -5px;
 
     &::before {
       content: "";
@@ -196,10 +199,12 @@
       background: linear-gradient(90deg, $black 0%, $black 49.8%, $black 93.23%), url("../img/svg/shadow.svg");
       opacity: 0.3;
       filter: blur(4px);
-      top: 274px;
-      left: 2px;
-      width: 100%;
-      height: 17px;
+      top: 276px;
+      left: 50%;
+      width: 270px;
+      height: 7px;
+      margin-left: -138px;
+      border-radius: 100%;
     }
   }
 }

@@ -20,3 +20,16 @@
 .copyright__link {
   margin-left: 15px;
 }
+
+.copyright__icon {
+  fill: $lipstick;
+
+  &:hover {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+}

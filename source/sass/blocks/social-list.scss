@@ -5,8 +5,23 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  width: 176px;
 }
 
-.social-list__value {
-  font-size: 0;
+.social-list__link {
+  display: flex;
+  align-items: center;
+  border: 3px solid $dark-blue-opc;
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $white;
+    opacity: 0.1;
+  }
 }

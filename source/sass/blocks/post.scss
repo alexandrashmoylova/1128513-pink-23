@@ -277,19 +277,27 @@
 }
 
 .post__range-svg {
+  fill: $dark-blue;
+  opacity: 0.3;
+
+  &:hover {
+    fill: $dark-blue;
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
+    fill: $lipstick;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
   }
-
-  fill: lighten($dark-blue, 30%);
-}
-
-.post__range-svg path:hover {
-  fill: lighten($dark-blue, 50%);
 }
 
 .post__range-svg--current {

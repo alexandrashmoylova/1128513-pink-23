@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -47px;
+    top: -63px;
     right: 20px;
   }
 
@@ -50,18 +50,18 @@
   width: 50px;
   height: 4px;
   background-color: $white;
-  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
   border-radius: 1px;
 }
 
 .header--closed .nav__toggle:hover::before {
   background-color: $lipstick;
-  box-shadow: 0 8px 0 0 $lipstick, 0 16px 0 0 $lipstick;
+  box-shadow: 0 10px 0 0 $lipstick, 0 20px 0 0 $lipstick;
 }
 
 .header--closed .nav__toggle:active::before {
   background-color: darken($lipstick, 30%);
-  box-shadow: 0 8px 0 0 darken($lipstick, 30%), 0 16px 0 0 darken($lipstick, 30%);
+  box-shadow: 0 10px 0 0 darken($lipstick, 30%), 0 20px 0 0 darken($lipstick, 30%);
 }
 
 .header--open .nav__toggle {

@@ -6,7 +6,21 @@
   background-color: $black-opc3;
   position: absolute;
   width: 100%;
+  min-height: 66px;
 }
+
+.header--closed .site-list {
+  display: none;
+}
+
+.header--open .site-list {
+  display: block;
+}
+
+// .header--nojs .site-list {
+//   display: block;
+//   position: static;
+// }
 
 .header__logo-link {
   cursor: pointer;

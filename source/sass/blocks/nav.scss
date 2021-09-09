@@ -42,7 +42,7 @@
   }
 }
 
-.nav--closed .nav__toggle::before {
+.header--closed .nav__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,17 +54,17 @@
   border-radius: 1px;
 }
 
-.nav--closed .nav__toggle:hover::before {
+.header--closed .nav__toggle:hover::before {
   background-color: $lipstick;
   box-shadow: 0 8px 0 0 $lipstick, 0 16px 0 0 $lipstick;
 }
 
-.nav--closed .nav__toggle:active::before {
+.header--closed .nav__toggle:active::before {
   background-color: darken($lipstick, 30%);
   box-shadow: 0 8px 0 0 darken($lipstick, 30%), 0 16px 0 0 darken($lipstick, 30%);
 }
 
-.nav--opened .nav__toggle {
+.header--open .nav__toggle {
   &::before,
   &::after {
     content: "";

@@ -17,8 +17,8 @@
     background-image: url("../img/background/grey-background-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    padding: 117px 20px 70px;
+    background-position: top -9px center;
+    padding: 115px 20px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,7 +58,7 @@
   height: 94px;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
+    font-size: 16px;
     height: 75px;
   }
 }
@@ -83,8 +83,8 @@
     transform: rotate(-45deg);
 
     @media (min-width: $tablet-width) {
-      top: 2px;
-      left: 5px;
+      top: 7px;
+      left: 7px;
     }
   }
 
@@ -99,7 +99,7 @@
     transform: rotate(-45deg);
 
     @media (min-width: $tablet-width) {
-      top: -4px;
+      top: 1px;
     }
   }
 }
@@ -143,6 +143,10 @@
   font-weight: 400;
   line-height: 30px;
   margin-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
+  }
 }
 
 .prices__list-name {
@@ -167,7 +171,7 @@
   right: 17px;
 
   @media (min-width: $tablet-width) {
-    bottom: 10px;
+    bottom: 12px;
     right: 61px;
   }
 

@@ -22,6 +22,7 @@
     background-size: cover;
     background-position: top center;
     min-height: 374px;
+    margin-top: 20px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map/map-tablet@2x.png");

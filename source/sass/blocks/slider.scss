@@ -51,9 +51,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 210px;
-      left: 130px;
-      width: 22px;
+      top: 222px;
+      left: 126px;
+      width: 30px;
       height: 2px;
       background-color: transparentize($dark-blue, 0.3);
       border-radius: 1px;
@@ -72,9 +72,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 225px;
-    left: 130px;
-    width: 22px;
+    top: 242px;
+    left: 127px;
+    width: 28px;
     height: 2px;
     background-color: transparentize($dark-blue, 0.3);
     border-radius: 1px;
@@ -95,9 +95,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 210px;
-      right: 130px;
-      width: 22px;
+      top: 223px;
+      right: 128px;
+      width: 28px;
       height: 2px;
       background-color: transparentize($dark-blue, 0.3);
       border-radius: 1px;
@@ -116,9 +116,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 225px;
-    right: 130px;
-    width: 22px;
+    top: 244px;
+    right: 128px;
+    width: 30px;
     height: 2px;
     background-color: transparentize($dark-blue, 0.3);
     border-radius: 1px;

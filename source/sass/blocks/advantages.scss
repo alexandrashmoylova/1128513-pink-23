@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 210px 72px;
+    padding: 63px 210px 46px;
   }
 }
 
@@ -38,6 +38,12 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+.advantages__text:first-child {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 29px;
   }
 }
 
@@ -73,7 +79,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 140px;
+    padding: 0 104px;
     background-image: url("../img/background/grey-background-desktop.png");
   }
 }
@@ -129,12 +135,27 @@
   margin-bottom: 13px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 24px;;
   text-align: center;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 21px;
+    padding: 0 24px 0 0;
+  }
+}
+
+
+.advantages__list-title:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding: 0 59px 0 37px;
+  }
+}
+
+.advantages__list-title--hidden {
+  @media (max-width: $desktop-width-only) {
+    display: none;
   }
 }
 
@@ -152,21 +173,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 25px;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    padding: 0 50px 0 45px;
   }
 }
 
-.advantages__list-text:nth-child(2) {
+.advantages__list-text--world {
   @media (min-width: $desktop-width) {
-    padding: 0 29px;
+    padding: 0 11px;
   }
 }
 
 .advantages__list-text--hiden {
   @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -186,10 +211,11 @@
   @media (min-width: $desktop-width) {
     position: relative;
     order: -1;
-    margin-bottom: 56px;
+    margin-bottom: 68px;
     overflow-y: clip;
     top: 12px;
-    left: -5px;
+    left: -12px;
+    height: 300px;
 
     &::before {
       content: "";
@@ -197,7 +223,7 @@
       background: linear-gradient(90deg, $black 0%, $black 49.8%, $black 93.23%), url("../img/svg/shadow.svg");
       opacity: 0.3;
       filter: blur(4px);
-      top: 276px;
+      top: 295px;
       left: 50%;
       width: 270px;
       height: 7px;

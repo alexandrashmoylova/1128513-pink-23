@@ -3,6 +3,7 @@
 
 .site-list {
   @include list-reset;
+  display: none;
 
   @media (min-width: $desktop-width) {
     width: 620px;

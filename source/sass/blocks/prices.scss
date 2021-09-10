@@ -9,7 +9,7 @@
   background-image: url("../img/background/grey-background-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top -5px center;
   padding-top: 145px;
   overflow: hidden;
 
@@ -114,6 +114,12 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
+  display: block;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;

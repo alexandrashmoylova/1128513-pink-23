@@ -34,6 +34,7 @@
     background-size: cover;
     background-position: top center;
     min-height: 502px;
+    margin-top: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map/map-desktop@2x.png");

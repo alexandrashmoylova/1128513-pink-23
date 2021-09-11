@@ -10,11 +10,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    row-gap: 54px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

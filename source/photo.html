@@ -14,7 +14,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header header--closed header--nojs">
     <div class="header__wrapper">
       <a class="header__logo-link header__link">
         <svg class="header__logo header__logo-mobile" width="74" height="23" role="img">
@@ -71,15 +71,15 @@
         </div>
         <div class="photo__wrapper-list">
           <ul class="photo-list">
-            <li class="photo-list__item photo-item photo-list__item-panorama">
-              <div class="photo-item__container">
-                <h3 class="photo-item__title">Анна<span class="photo-item__time">(5 минут назад)</span></h3>
-                <p class="photo-item__text">Прыгать или нет? Напишите в комментарии свой совет и&nbsp;<br class="photo-item__text--hiden">cмотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="photo-item__wrapper">
+            <li class="photo__item-panorama">
+              <div class="photo-item__container-panorama">
+                <h3 class="photo-item__title photo-item__title-panorama">Анна<span class="photo-item__time">(5 минут назад)</span></h3>
+                <p class="photo-item__text photo-item__text-panorama">Прыгать или нет? Напишите в комментарии свой совет и&nbsp;<br class="photo-item__text--hidden">cмотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="photo-item__wrapper-panorama">
                   <svg class="photo-item__icon" width="13" height="12" role="img">
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                   </svg>
-                  <p class="photo-item__likes">Нравится: <span class="photo-item__counter">215</span></p>
+                  <p class="photo-item__likes photo-item__likes-panorama">Нравится: <span class="photo-item__counter">215</span></p>
                 </div>
               </div>
             </li>
@@ -309,6 +309,23 @@
       </p>
     </div>
   </footer>
+  <script>
+    var header= document.querySelector('.header');
+    var navToggle = document.querySelector('.nav__toggle');
+
+    header.classList.remove('header--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (header.classList.contains('header--closed')) {
+        header.classList.remove('header--closed');
+        header.classList.add('header--open');
+      }
+      else {
+      header.classList.remove('header--open');
+      header.classList.add('header--closed');
+    }
+    })
+  </script>
 </body>
 
 

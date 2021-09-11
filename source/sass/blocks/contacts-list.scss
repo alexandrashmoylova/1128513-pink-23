@@ -13,7 +13,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -34,7 +37,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 3/5;
+    padding: 0;
+    margin-left: 50px;
+  }
+}
+
+.contacts-list__item--email {
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
   }
 }
 
@@ -43,6 +57,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .contacts-list__link {

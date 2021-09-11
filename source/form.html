@@ -14,7 +14,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header header--closed header--nojs">
     <div class="header__wrapper">
       <a class="header__logo-link header__link">
         <svg class="header__logo header__logo-mobile" width="74" height="23" role="img">
@@ -215,6 +215,24 @@
       </p>
     </div>
   </footer>
+  <script>
+    var header= document.querySelector('.header');
+    var navToggle = document.querySelector('.nav__toggle');
+
+    header.classList.remove('header--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (header.classList.contains('header--closed')) {
+        header.classList.remove('header--closed');
+        header.classList.add('header--open');
+      }
+      else {
+      header.classList.remove('header--open');
+      header.classList.add('header--closed');
+    }
+    })
+
+  </script>
 </body>
 
 

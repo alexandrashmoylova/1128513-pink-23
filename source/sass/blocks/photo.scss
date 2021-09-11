@@ -6,14 +6,14 @@
 }
 
 .photo__wrapper-title {
-  padding: 102px 74px 84px;
+  padding: 95px 74px 76px;
 
   @media (min-width: $tablet-width) {
-    padding: 141px 151px 134px 151px;
+    padding: 177px 151px 128px 149px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 136px 272px 104px;
+    padding: 170px 272px 88px;
   }
 }
 
@@ -32,14 +32,14 @@
 }
 
 .photo__wrapper-text {
-  padding: 54px 37px 60px;
+  padding: 45px 37px 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 100px 98px 85px;
+    padding: 90px 98px 77px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 314px 97px;
+    padding: 90px 314px 90px;
   }
 }
 
@@ -63,8 +63,8 @@
     position: absolute;
     text-transform: uppercase;
     color: $white;
-    top: 7px;
-    right: 38px;
+    top: 6px;
+    right: 40px;
     z-index: 10;
     font-size: 12px;
     line-height: 24px;
@@ -75,7 +75,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 147px;
+      right: 150px;
+      top: 60px;
     }
   }
 
@@ -94,6 +95,7 @@
 
     @media (min-width: $desktop-width) {
       right: 130px;
+      top: 54px;
     }
   }
 }

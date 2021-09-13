@@ -312,6 +312,7 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     fill: $lipstick;
+    opacity: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -320,7 +321,10 @@
 }
 
 .post__range-svg--current {
-  fill: $lipstick;
+  @media (max-width: $mobile-width-only) {
+    fill: $lipstick;
+    opacity: 1;
+  }
 }
 
 .post__button-wrapper {

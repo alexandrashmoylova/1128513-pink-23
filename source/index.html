@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Главная</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -302,24 +302,7 @@
       </p>
     </div>
   </footer>
-  <script>
-    var header= document.querySelector('.header');
-    var navToggle = document.querySelector('.nav__toggle');
-
-    header.classList.remove('header--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (header.classList.contains('header--closed')) {
-        header.classList.remove('header--closed');
-        header.classList.add('header--open');
-      }
-      else {
-      header.classList.remove('header--open');
-      header.classList.add('header--closed');
-    }
-    })
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

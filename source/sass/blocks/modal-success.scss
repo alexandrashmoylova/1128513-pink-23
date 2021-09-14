@@ -4,7 +4,7 @@
 .modal-success {
   display: none;
   position: fixed;
-  top: 130px;
+  top: 400px;
   bottom: auto;
   left: 0;
   right: 0;
@@ -12,15 +12,19 @@
 }
 
 .modal__wrapper-success {
-  padding: 44px 27px 41px;
+  padding: 40px 19px 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 41px 35px;
+    padding: 69px 70px 28px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 201px 44px;
+    padding: 41px 179px 14px;
   }
+}
+
+.modal-success__title {
+  margin-bottom: 24px;
 }
 
 .modal-success__button {
@@ -30,6 +34,8 @@
 }
 
 .modal-success__container {
+  width: 100%;
+  box-sizing: border-box;
   background-color: $grey-back;
   padding: 52px 22px;
 
@@ -38,6 +44,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 162px;
+    padding: 49px 162px;
   }
 }

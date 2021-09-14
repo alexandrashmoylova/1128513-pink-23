@@ -10,17 +10,23 @@
 }
 
 .header--closed .site-list {
-  display: none;
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
 }
 
 .header--open .site-list {
-  display: block;
+  @media (max-width: $desktop-width-only) {
+    display: block;
+  }
 }
 
-// .header--nojs .site-list {
-//   display: block;
-//   position: static;
-// }
+.header--nojs .site-list {
+  @media (max-width: $desktop-width-only) {
+    display: block;
+    position: static;
+  }
+}
 
 .header__logo-link {
   cursor: pointer;
@@ -32,6 +38,10 @@
     width: 145px;
     height: 40px;
     padding: 25px 20px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 43px;
   }
 }
 

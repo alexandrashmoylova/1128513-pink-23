@@ -6,8 +6,14 @@
   margin-bottom: 20px;
   width: 100%;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.photo-item:first-of-type {
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -29,22 +35,30 @@
 }
 
 .photo-item__container {
-  padding: 25px 10px 26px 17px;
+  padding: 20px 10px 17px 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
+    padding: 23px 28px 22px 31px;
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 18px 22px 26px;
   }
 }
 
 .photo-item__title {
   margin: 0;
-  margin-bottom: 14px;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .photo-item__time {
+  text-transform: uppercase;
   font-size: 12px;
   font-weight: 300;
   line-height: 24px;
@@ -54,15 +68,15 @@
 
 .photo-item__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.photo-item__text:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+.photo-item__text--hidden {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -75,12 +89,17 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 13px;
+  }
 }
 
 .photo-item__icon {
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
   cursor: pointer;
 }
 
@@ -105,4 +124,58 @@
   font-weight: 400;
   line-height: 24px;
   color: $lipstick;
+}
+
+.photo__item-panorama {
+  background-color: $grey-back;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    margin-bottom: 50px;
+  }
+}
+
+.photo-item__container-panorama {
+  padding: 18px 0 21px 17px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 29px 15px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 30px 11px 28px;
+  }
+}
+
+.photo-item__title-panorama {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+}
+
+.photo-item__text-panorama {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+  }
+}
+
+.photo-item__wrapper-panorama {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.photo-item__likes-panorama {
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }

@@ -42,6 +42,10 @@
   }
 }
 
+.header--nojs .nav__toggle {
+  display: none;
+}
+
 .header--closed .nav__toggle::before {
   content: "";
   position: absolute;

@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Главная</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -42,7 +43,7 @@
             <a class="site-list__item-link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="https://htmlacademy.ru/study">Html Academy</a>
+            <a class="site-list__item-link" href="https://htmlacademy.ru/study">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -101,20 +102,23 @@
                 <img class="advantages__img-item advantages__img-item--pink" src="img/iphone/iphone-pink-desktop.png" srcset="img/iphone/iphone-pink-desktop@2x.png 2x" width="186" height="382" alt="Изображение iphone с розовым фоном">
               </div>
               <h3 class="advantages__list-title">Меняет мир вокруг</h3>
-              <p class="advantages__list-text">
-                Сделайте снимок и украсьте его смайликом или текстовой
-                подписью, чтобы<br class="advantages__list-text--hiden"> усилить эффект
+              <p class="advantages__list-text advantages__list-text--world">
+                Сделайте снимок и&nbsp;украсьте его смайликом или текстовой
+                подписью,&nbsp; <br class="advantages__list-text--hidden-desktop">чтобы усилить эффект
               </p>
             </li>
             <li class="advantages__list-item">
               <div class="advantages__img">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="iphone-hi-desktop.webp 1x, iphone-hi-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone/iphone-hi-tablet.webp 1x, img/iphone/iphone-hi-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone/iphone-hi-mobile.webp 1x, img/iphone/iphone-hi-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/iphone/iphone-hi-desktop.png 1x, img/iphone/iphone-hi-desktop@2x.png 2x">
                   <source media="(min-width: 600px)" srcset="img/iphone/iphone-hi-tablet.png 1x, img/iphone/iphone-hi-tablet@2x.png 2x">
                   <img class="advantages__img-item advantages__img-item--hi" src="img/iphone/iphone-hi-mobile.png" srcset="img/iphone/iphone-hi-mobile@2x.png" width="157" height="320" alt="Изображение iphone со смайлом">
                 </picture>
               </div>
-              <h3 class="advantages__list-title">Заводит новых друзей</h3>
+              <h3 class="advantages__list-title">Заводит<br class="advantages__list-title--hidden"> новых друзей</h3>
               <p class="advantages__list-text">
                 Ставьте лайки, комментируйте, делитесь фотографиями
                 с друзьями и заводите новых
@@ -130,7 +134,7 @@
         <div class="article__list article__list--icon">
           <h2 class="article__title">Эффект<br class="article__title--hidden"> на 24 часа!</h2>
           <p class="article__text">Британские ученые провели исследования и доказали,<br class="article__text--hidden">
-            что положительный эффект&nbsp; от использования приложения длится целые сутки!</p>
+            что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
           <a class="article__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -243,7 +247,7 @@
             </li>
             <li class="contacts-list__item contacts-list__item--adress">
               <h4 class="contacts-list__title">Приезжайте в гости:</h4>
-              <a class="contacts-list__link" href="#" about="_blank" aria-label="Наш адрес">ул. Большая Конюшенная, 19/8</a>
+              <a class="contacts-list__link" href="#" about="_blank" aria-label="Наш адрес">ул. Большая<br> Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
@@ -302,24 +306,7 @@
       </p>
     </div>
   </footer>
-  <script>
-    var nav = document.querySelector('.header');
-    var navToggle = document.querySelector('.nav__toggle');
-
-    header.classList.remove('header--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (header.classList.contains('header--closed')) {
-        header.classList.remove('header--closed');
-        header.classList.add('header--open');
-      }
-      else {
-      header.classList.add('header--closed');
-      header.classList.remove('header--opened');
-    }
-    })
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

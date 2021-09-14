@@ -8,15 +8,15 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  box-shadow: 7px 15px $modal-shadow;
-}
+  box-shadow: 0 7px 15px $modal-shadow;
 
-.modal__wrapper-check {
-  padding: 44px 20px 50px;
-}
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
 
-.modal__wrapper-success {
-  padding: 44px 27px 41px;
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
 }
 
 .modal__title {
@@ -25,7 +25,6 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;

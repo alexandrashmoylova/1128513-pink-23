@@ -16,7 +16,7 @@
     background-image: url("../img/background/back-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top -15px center;
+    background-position: top center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/back-tablet@2x.png");
@@ -27,7 +27,7 @@
     background-image: url("../img/background/back-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top -15px center;
+    background-position: top center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/back-desktop@2x.png");

@@ -20,6 +20,10 @@
 
 .copyright__link {
   margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+  }
 }
 
 .copyright__icon {

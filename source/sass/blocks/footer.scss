@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 170px 87px;
+    padding: 70px 129px 87px;
   }
 }
 
@@ -30,6 +30,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -73,8 +74,15 @@
 
 .footer__social {
   margin-bottom: 35px;
+  width: 178px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 184px;
+    margin-left: -34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

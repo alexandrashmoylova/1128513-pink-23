@@ -62,28 +62,6 @@
       top: 264px;
     }
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/triangle-mobile.png");
-    background-repeat: no-repeat;
-    width: 320px;
-    height: 123px;
-    top: -88px;
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/triangle-tablet.png");
-      width: 660px;
-      top: -50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/triangle-desktop.png");
-      width: 1200px;
-      top: -20px;
-    }
-  }
 }
 
 .map__iframe {
@@ -100,5 +78,17 @@
 
   @media (min-width: $desktop-width) {
     height: 502px;
+  }
+}
+
+.map__triangle {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -2px;
+  left: 0;
+
+  @media (min-width: $desktop-width) {
+    top: -16px;
   }
 }

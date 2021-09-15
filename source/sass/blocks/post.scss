@@ -47,6 +47,7 @@
   width: 100%;
   padding: 20px 20px 38px 20px;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -95,6 +96,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 45px 48px 16px 36px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -105,16 +107,20 @@
 
 .post__filter-list__item {
   margin-bottom: 52px;
-  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 23px;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 115%;
     height: 1px;
     background-color: darken($grey-back, 10%);
-    top: 111px;
-    left: -220px;
+    bottom: 0;
+    left: -19px;
 
     @media (min-width: $tablet-width) {
       width: 275px;
@@ -125,11 +131,6 @@
     @media (min-width: $desktop-width) {
       width: 410px;
     }
-  }
-
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
   }
 }
 
@@ -241,16 +242,18 @@
 }
 
 .post__container-range-contrast {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 240px;
+    width: 86%;
     height: 2px;
     background-color: $dark-blue;
-    top: 75px;
-    right: -28px;
+    top: 128px;
+    left: 21px;
 
 
     @media (min-width: $tablet-width) {
@@ -268,8 +271,8 @@
     background-color: $white;
     border: 2px solid $lipstick;
     border-radius: 50%;
-    top: 70px;
-    right: 5px;
+    top: 122px;
+    right: 19%;
 
     @media (min-width: $tablet-width) {
       top: 10px;

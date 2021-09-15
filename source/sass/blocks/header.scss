@@ -9,22 +9,16 @@
   min-height: 66px;
 }
 
-.header--closed .site-list {
-  @media (max-width: $desktop-width-only) {
-    display: none;
-  }
-}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
 
-.header--open .site-list {
-  @media (max-width: $desktop-width-only) {
-    display: block;
-  }
-}
-
-.header--nojs .site-list {
-  @media (max-width: $desktop-width-only) {
-    display: block;
-    position: static;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
   }
 }
 
@@ -80,27 +74,80 @@
   }
 }
 
-.header__wrapper {
-  display: flex;
-  flex-direction: column;
+.header--nojs .nav__toggle {
+  display: none;
+}
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 130px;
+.header--nojs .site-list {
+  @media (max-width: $desktop-width-only) {
+    display: block;
+    position: static;
   }
 }
 
-.header__wraper-title {
-  padding: 36px 46px 51px;
+.header--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  border-radius: 1px;
+}
 
-  @media (min-width: $tablet-width) {
-    padding: 74px 20px;
+.header--closed .nav__toggle:hover::before {
+  background-color: $lipstick;
+  box-shadow: 0 10px 0 0 $lipstick, 0 20px 0 0 $lipstick;
+}
+
+.header--closed .nav__toggle:active::before {
+  background-color: darken($lipstick, 30%);
+  box-shadow: 0 10px 0 0 darken($lipstick, 30%), 0 20px 0 0 darken($lipstick, 30%);
+}
+
+.header--open .nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 23px;
+    height: 3px;
+    background-color: $white;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 74px 276px 104px;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $lipstick;
+    box-shadow: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: darken($lipstick, 30%);
+  }
+}
+
+.header--closed .site-list {
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
+}
+
+.header--open .site-list {
+  @media (max-width: $desktop-width-only) {
+    display: block;
   }
 }

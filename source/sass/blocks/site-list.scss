@@ -51,7 +51,7 @@
   }
 }
 
-.site-list__item--active {
+.site-list__item-link--active {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white;
     padding-bottom: 19px;

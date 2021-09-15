@@ -191,7 +191,7 @@
   margin-bottom: 47px;
 }
 
-.form-option__wrapper-contacts--telephone {
+.form-option__wrapper-telephone {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -212,7 +212,7 @@
   }
 }
 
-.form-option__wrapper-contacts--email {
+.form-option__wrapper-email {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -404,6 +404,7 @@ textarea::placeholder {
 }
 
 .form-option__text {
+  font-family: inherit;
   outline: none;
   appearance: none;
   border: 2px solid $light-grey;
@@ -412,9 +413,13 @@ textarea::placeholder {
   resize: none;
   padding: 22px 24px;
 
+  @media (min-width: $tablet-width) {
+    padding: 18px 0 24px 17px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 9px 0 0 15px;
     height: 124px;
-    padding: 0;
   }
 
   &:hover {
@@ -427,6 +432,7 @@ textarea::placeholder {
 }
 
 .form-option__window {
+  font-family: inherit;
   border: 2px solid $light-grey;
   border-radius: 1px;
   padding: 0 20px;

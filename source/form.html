@@ -40,7 +40,7 @@
             <a class="site-list__item-link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link site-list__item--active" href="form.html">Конкурс</a>
+            <a class="site-list__item-link site-list__item-link--active" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link" href="https://htmlacademy.ru/study">HTML Academy</a>
@@ -58,7 +58,7 @@
     <section class="form">
       <h2 class="visually-hidden">Конкурс на путешесвие</h2>
       <div class="form__wrapper-text">
-        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="form__text--hiden">Пожалуйста, заполните форму ниже:</span> </p>
+        <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="form__text-hidden">Пожалуйста, заполните форму ниже:</span> </p>
       </div>
       <div class="form__wrapper">
         <form class="form-option" action="https://echo.htmlacademy.ru" method="post">
@@ -111,11 +111,11 @@
           <fieldset class="form-option__group form-option__group-contacts">
             <legend class="form-option__title form-option__title--contacts">Контактная информация</legend>
             <div class="form-option__container-contacts">
-              <div class="form-option__wrapper form-option__wrapper-contacts--telephone">
+              <div class="form-option__wrapper form-option__wrapper-telephone">
                 <label class="form-option__title form-option__title--info" for="tel">Номер телефона</label>
                 <input class="form-option__window" type="text" name="telephone" placeholder="Номер, пожалуйста" id="tel">
               </div>
-              <div class="form-option__wrapper form-option__wrapper-contacts--email">
+              <div class="form-option__wrapper form-option__wrapper-email">
                 <label class="form-option__title form-option__title--info" for="email">Адрес почты</label>
                 <input class="form-option__window" type="text" name="email" placeholder="Введите почту *" id="email" required>
               </div>
@@ -147,13 +147,13 @@
           <button class="form__submit form-button" type="submit">Отправить форму</button>
           <p class="form__text-required">
             <sup>*</sup>
-            &mdash; Обязательные <span class="form__text-required--hiden">для заполнения</span> поля
+            &mdash; Обязательные <span class="form__text-required-hidden">для заполнения</span> поля
           </p>
         </div>
       </div>
     </section>
     <section class="modal-check modal">
-      <div class="modal__wrapper-check">
+      <div class="modal-check__wrapper">
         <h2 class="modal-check__title modal__title">Что-то пошло не&nbsp;так!</h2>
         <p class="modal-check__text modal__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
       </div>
@@ -163,7 +163,7 @@
 
     </section>
     <section class="modal-success modal">
-      <div class="modal__wrapper-success">
+      <div class="modal-success__wrapper">
         <h2 class="modal-success__title modal__title">Ваша заявка отправлена</h2>
         <p class="modal-success__text modal__text">Спасибо ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы ассмотрим ее и <br>оповестим вас.</p>
       </div>
@@ -180,7 +180,7 @@
           <svg class="footer__link-glasses" width="145" height="40" role="img">
             <use xlink:href="img/sprite.svg#icon-footer"></use>
           </svg>
-          <svg class="footer__link-glasses--desktop" width="147" height="40" role="img">
+          <svg class="footer__link-glasses-desktop" width="147" height="40" role="img">
             <use xlink:href="img/sprite.svg#icon-footer-desktop"></use>
           </svg>
         </a>
